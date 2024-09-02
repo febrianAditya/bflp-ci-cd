@@ -20,12 +20,12 @@ jobs:
           
       - name: Extract metadata (tags, labels) for Docker       
         id: meta       
-        uses: docker/metadata-action@main    #commit spesifik menggunakan SHA  
+        uses: docker/metadata-action@master    #commit spesifik menggunakan SHA  
         with:         
           images: febrianaditya/bflp-ci-cd   
           
       - name: Build and push Docker image       
-        uses: docker/build-push-action@main    #commit spesifik menggunakan SHA   
+        uses: docker/build-push-action@master    #commit spesifik menggunakan SHA   
         with:         
           context: .         
           push: true         
